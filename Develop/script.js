@@ -71,7 +71,7 @@ function getCharacterTypes() {
   }
 
   while (length < 8 || length > 128) {
-    alert("Please use only numbers 8-28. Please click the generate button again.")
+    alert("Please use only numbers 8-28.")
     length = parseInt(prompt("How long would you like your password to be?"));
   }
 
