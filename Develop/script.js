@@ -68,12 +68,11 @@ function getCharacterTypes() {
   var length = parseInt(prompt("How long would you like your password to be?"));
   if (isNaN(length)) {
     alert("Please use numbers only.")
-    return
   }
 
-  if (length < 8 || length > 128) {
-    alert("Please use only numbers 8-28.")
-    return
+  while (length < 8 || length > 128) {
+    alert("Please use only numbers 8-28. Please click the generate button again.")
+    length = parseInt(prompt("How long would you like your password to be?"));
   }
 
   var hasSpecialChar = confirm("Click ok to include special characters");
